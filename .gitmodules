@@ -1,0 +1,4 @@
+[submodule "lib/EagleSabi.Infrastructure"]
+	path = lib/EagleSabi.Infrastructure
+	url = https://github.com/Bitcoin-Eagles/EagleSabi.Infrastructure.git
+	branch = EI-1_Extract_EventSourcing_from_WalletWasabi
