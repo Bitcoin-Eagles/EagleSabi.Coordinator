@@ -1,0 +1,8 @@
+[submodule "lib/EagleSabi.Infrastructure"]
+	path = lib/EagleSabi.Infrastructure
+	url = https://github.com/Bitcoin-Eagles/EagleSabi.Infrastructure.git
+	branch = development
+[submodule "lib/EagleSabi"]
+	path = lib/EagleSabi
+	url = https://github.com/Bitcoin-Eagles/EagleSabi.git
+	branch = master

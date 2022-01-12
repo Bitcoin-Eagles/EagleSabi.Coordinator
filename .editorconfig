@@ -16,3 +16,6 @@ dotnet_sort_system_directives_first = true
 dotnet_style_require_accessibility_modifiers = for_non_interface_members:suggestion
 
 csharp_style_namespace_declarations = file_scoped:suggestion
+
+# CA1822: Mark members as static ; Category: Performance
+dotnet_diagnostic.CA1822.severity = none

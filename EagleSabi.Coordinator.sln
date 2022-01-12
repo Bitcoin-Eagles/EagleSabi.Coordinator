@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32014.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EagleSabi.Coordinator.Domain", "src\EagleSabi.Coordinator.Domain\EagleSabi.Coordinator.Domain.csproj", "{B7F0EE43-6B73-4EB4-864E-A71A6082DD59}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "lib", "lib", "{80079B07-7866-4D9D-B554-AE86BA5F5F29}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EagleSabi.Infrastructure.Common", "lib\EagleSabi.Infrastructure\EagleSabi.Infrastructure.Common\EagleSabi.Infrastructure.Common.csproj", "{72DA8192-804E-4EC2-A1C5-072F6F7E7238}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EagleSabi.Infrastructure", "EagleSabi.Infrastructure", "{0B34E8AE-297F-4D36-A15A-AAE99D56CF09}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EagleSabi", "EagleSabi", "{291ED0B0-978A-4DAE-9808-54F5B28330A0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WalletWasabi", "lib\EagleSabi\WalletWasabi\WalletWasabi.csproj", "{9DB62C3A-6CF0-4DBF-BDAD-C55646540F39}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EagleSabi.Coordinator.Domain.Tests", "EagleSabi.Coordinator.Domain.Tests\EagleSabi.Coordinator.Domain.Tests.csproj", "{DEDF5E96-3D5B-41E6-BB64-E7C51D445F8D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B7F0EE43-6B73-4EB4-864E-A71A6082DD59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7F0EE43-6B73-4EB4-864E-A71A6082DD59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7F0EE43-6B73-4EB4-864E-A71A6082DD59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7F0EE43-6B73-4EB4-864E-A71A6082DD59}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72DA8192-804E-4EC2-A1C5-072F6F7E7238}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72DA8192-804E-4EC2-A1C5-072F6F7E7238}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72DA8192-804E-4EC2-A1C5-072F6F7E7238}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72DA8192-804E-4EC2-A1C5-072F6F7E7238}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9DB62C3A-6CF0-4DBF-BDAD-C55646540F39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9DB62C3A-6CF0-4DBF-BDAD-C55646540F39}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9DB62C3A-6CF0-4DBF-BDAD-C55646540F39}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9DB62C3A-6CF0-4DBF-BDAD-C55646540F39}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DEDF5E96-3D5B-41E6-BB64-E7C51D445F8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DEDF5E96-3D5B-41E6-BB64-E7C51D445F8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DEDF5E96-3D5B-41E6-BB64-E7C51D445F8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DEDF5E96-3D5B-41E6-BB64-E7C51D445F8D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{72DA8192-804E-4EC2-A1C5-072F6F7E7238} = {0B34E8AE-297F-4D36-A15A-AAE99D56CF09}
+		{0B34E8AE-297F-4D36-A15A-AAE99D56CF09} = {80079B07-7866-4D9D-B554-AE86BA5F5F29}
+		{291ED0B0-978A-4DAE-9808-54F5B28330A0} = {80079B07-7866-4D9D-B554-AE86BA5F5F29}
+		{9DB62C3A-6CF0-4DBF-BDAD-C55646540F39} = {291ED0B0-978A-4DAE-9808-54F5B28330A0}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {468D31D2-D3CC-4FAA-9F7C-5EE67E878E7E}
+	EndGlobalSection
+EndGlobal
