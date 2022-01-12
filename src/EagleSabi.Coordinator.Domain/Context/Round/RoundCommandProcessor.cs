@@ -13,9 +13,7 @@ public class RoundCommandProcessor : ICommandProcessor
     {
         var errors = PrepareErrors();
         if (!IsStateValid(PhaseEnum.New, state, command.GetType().Name, out var errorResult))
-        {
             return errorResult;
-        }
         return errors.Count > 0 ?
             Result.Fail(errors) :
             Result.Succeed(
@@ -26,9 +24,7 @@ public class RoundCommandProcessor : ICommandProcessor
     {
         var errors = PrepareErrors();
         if (!IsStateValid(PhaseEnum.InputRegistration, state, command.GetType().Name, out var errorResult))
-        {
             return errorResult;
-        }
         return errors.Count > 0 ?
             Result.Fail(errors) :
             Result.Succeed(
