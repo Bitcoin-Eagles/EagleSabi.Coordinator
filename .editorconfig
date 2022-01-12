@@ -19,3 +19,6 @@ csharp_style_namespace_declarations = file_scoped:suggestion
 
 # CA1822: Mark members as static ; Category: Performance
 dotnet_diagnostic.CA1822.severity = none
+
+# whether a newline is automatically inserted at the end of a file on save (when a newline is missing)
+insert_final_newline = true
