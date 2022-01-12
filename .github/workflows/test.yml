@@ -1,0 +1,44 @@
+name: test
+
+on:
+  push:
+  pull_request:
+    branches: [ master, development ]
+
+env:
+  DOTNET_VERSION: '6.0.101'
+
+jobs:
+  test:
+
+    name: test-${{matrix.os}}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest, macOS-latest]
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Setup .NET Core
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: ${{ env.DOTNET_VERSION }}
+
+    - name: Restore
+      run: dotnet restore
+
+    - name: Build
+      run: dotnet build --no-restore
+
+    - name: Test
+      run: dotnet test --no-build --logger "console;verbosity=detailed" --collect:"XPlat Code Coverage" --logger trx
+      continue-on-error: true
+
+    - uses: actions/upload-artifact@v2
+      with:
+        name: TestResults
+        path: "*/TestResults"
+
+    - uses: codecov/codecov-action@v2
+      with:
+        fail_ci_if_error: true
